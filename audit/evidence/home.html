@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Title -->
+    <title>Delafosse Group SARL</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Yves LADDE">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="keywords"
+          content="Delafosse Group SARL, Bestcash CI, immobilier, terrains, location, fashion, order, shopping, store, fashion design, fashion store, responsive design, fashion showcase, modern design, fashion technology, e-shop, ecommerce web, eCommerce Website, minimal shop, online shop, online shopping, pixio, user experience, Design Elements, Trendy, Stylish, User-Friendly, Navigation, Product Display, Branding, Development, Visual Design, UI/UX, Website, Web Design">
+    <meta name="description"
+          content="Delafosse Group, la prestation au-delà du Service !">
+
+    <meta property="og:title" content="Delafosse Group SARL: la prestation au-delà du Service !">
+    <meta property="og:description"
+          content="Delafosse Group, la prestation au-delà du Service !">
+    <meta property="og:image" content="https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png">
+
+    <!-- TWITTER META -->
+    <meta name="twitter:title" content="Delafosse Group SARL">
+    <meta name="twitter:description"
+          content="Delafosse Group SARL: la prestation au-delà du Service !">
+    <meta name="twitter:image" content="https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" type="image/x-icon" href="/template_vitrine/assets_custom/logos/logo_icone.ico">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" type="text/css"
+          href="/template_vitrine/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lightgallery.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lg-thumbnail.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lg-zoom.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        #loader_gestion_panier{
+            display: none;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(255,255,255,0.4);
+            z-index: 99999999;
+            text-align: center;
+        }
+        #loader_gestion_panier img{
+
+            position: absolute;
+            top: 30%;
+            /*bottom: 0px;*/
+            right: 40%;
+            /*right: 0px;*/
+            /*width: 50px;*/
+            /*height: 50px;*/
+        }
+
+        .mobile_only{
+            display: none;
+        }
+
+        
+        @media screen and (max-width: 800px) {
+            .mobile_only{
+                display: block;
+            }
+        }
+
+    </style>
+    
+    <style>
+         html {
+             scroll-behavior: smooth;
+         }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 10rem !important;
+        }
+    </style>
+
+    <style>
+        .dz-media{
+            background-color: rgb(182,123,99,0.2);
+            /*background: linear-gradient( rgb(182,123,99 ) ,rgb(182,123,99 ));*/
+        }
+
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid red;
+            width: 30px;
+            height: 30px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+        .loader_ajout_au_panier, .btn_terminer_la_commande{
+            display: none;
+        }
+
+        #div_btn_voir_plus_darticles{
+            position: absolute; top: 25%
+        }
+
+        @media screen and (max-width: 800px ){
+
+            #div_btn_voir_plus_darticles{
+                all: unset;
+            }
+        }
+
+        .image_illustration_produit{
+            min-height: 300px;
+        }
+
+        @media screen and (min-width: 800px ) {
+            .slider_box_mode {
+                padding: 0px 80px;
+            }
+            .carousel-inner{
+                height: 500px !important;
+                overflow: hidden
+            }
+            .carousel-item > img{
+                height: 500px !important;
+                overflow: hidden
+            }
+        }
+
+        @media screen and (max-width: 800px ) {
+            .image_secteur{
+                height: 200px !important;
+            }
+        }
+
+        /* ---- Cartes "Nos secteurs d'activites" ---- */
+        .card_secteur{
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+        .card_secteur:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+        }
+
+        .card_secteur_media{
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            background-color: rgba(182, 123, 99, 0.12);
+        }
+        .card_secteur_media img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease;
+        }
+        .card_secteur:hover .card_secteur_media img{
+            transform: scale(1.08);
+        }
+
+        .card_secteur_overlay{
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .35), rgba(0, 0, 0, 0) 55%);
+            opacity: 0;
+            transition: opacity .35s ease;
+        }
+        .card_secteur:hover .card_secteur_overlay{
+            opacity: 1;
+        }
+
+        .card_secteur_titre{
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: .35rem;
+            color: #1f1f1f;
+            transition: color .3s ease;
+        }
+        .card_secteur:hover .card_secteur_titre{
+            color: #b67b63;
+        }
+
+        .card_secteur_lien{
+            font-size: .82rem;
+            font-weight: 500;
+            color: #8a8a8a;
+            transition: color .3s ease;
+        }
+        .card_secteur:hover .card_secteur_lien{
+            color: #b67b63;
+        }
+        .card_secteur_lien i{
+            transition: transform .3s ease;
+            display: inline-block;
+        }
+        .card_secteur:hover .card_secteur_lien i{
+            transform: translateX(4px);
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="page-wraper">
+
+
+
+
+    <!-- Header Star -->
+    <header class="site-header mo-left header">
+        <!-- Main Header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
+            <div class="main-bar clearfix">
+                <div class="container-fluid clearfix d-lg-flex d-block" style="position: relative">
+                    <!-- Website Logo -->
+                    <div class="logo-header logo-dark me-md-5">
+                        &nbsp;
+                        <a href="https://delafossegroup.com">
+                                                            <img src="/uploaded_files/logo_principal_uploaded.png" width="100px">
+                                                    </a>
+                    </div>
+
+                    <!-- Nav Toggle Button -->
+
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Main Nav -->
+                    <div class="header-nav w3menu navbar-collapse collapse justify-content-start"
+                         id="navbarNavDropdown">
+                        <div class="logo-header logo-dark">
+                            <a href="https://delafossegroup.com"><img src="/template_vitrine/assets_custom/logos/logo_officiel.png" alt=""></a>
+                        </div>
+                        <ul class=" nav navbar-nav">
+                            <li class="auto-width menu-left active">
+                                <a href="https://delafossegroup.com"><span>Acceuil</span></a>
+                            </li>
+                            
+                            
+                            <li class="" ><a href="https://delafossegroup.com/secteur-activite/Monetique">Monetique</a></li>
+                            
+                            <li class=""><a href="https://delafossegroup.com/secteur-activite/Electromenager">Electromenager</a></li>
+                            <li class=""><a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink">BBL Energy Drink</a></li>
+
+
+                            <li class="  ">
+                                <a href="https://delafossegroup.com/bien-immobilier"><span>Biens immobiliers</span></a>
+                            </li>
+
+                            <li class=" ">
+                                <a href="https://delafossegroup.com/boutique"><span>Boutique</span></a>
+                            </li>
+
+                            <li class="nav-item cart-link mobile_only">
+                                <a href="https://delafossegroup.com/login" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                    Mon espace
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dz-social-icon">
+                           
+                        </div>
+                    </div>
+
+                    <!-- EXTRA NAV -->
+                    <div class="extra-nav">
+                        <div class="extra-cell">
+                            <ul class="header-right">
+                                
+                                <li class="nav-item cart-link">
+                                    
+                                    <a href="https://delafossegroup.com/boutique/finalisation/panier" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                        <i class="iconly-Broken-Buy"></i>
+                                        <span class="badge badge-circle" id="span_nb_produit_en_panier"></span>
+                                        &nbsp;
+                                        Panier &nbsp;&nbsp;
+                                    </a>
+                                </li>
+                                <li class="nav-item cart-link">
+                                    <a href="https://delafossegroup.com/login" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                        Mon espace
+                                    </a>
+                                </li>
+
+                              
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="div_notification" style="position: absolute;top: 80px;z-index: 99999999;left: 0px;right: 0px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header End -->
+
+
+
+        
+    </header>
+    <!-- Header End -->
+        <div class="page-content bg-light">
+
+        <section class="dz-bnr-inr dz-bnr-inr-sm bg-light">
+            <div class="container">
+                <div class="dz-bnr-inr-entry" style="padding: 5px !important;">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-7">
+                            <div class="text-start mb-xl-0 mb-4">
+                                <h1 style="text-transform: none" >Delafosse Group, la prestation au-delà du Service !</h1>
+                                <nav aria-label="breadcrumb" class="breadcrumb-row">
+                                    
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 ">
+                            <div class="about-sale  text-start">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 col-6">
+                                        <div class="about-content">
+                                            <h2 class="title">+<span class="counter">5</span></h2>
+                                            <p class="text">annees d&#039;expertise</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-6 col-6">
+                                        <div class="about-content">
+                                            <h2 class="title">95%</h2>
+                                            <p class="text">de Clients Satisfaits </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-banner overflow-visible slider_box_mode">
+
+
+            <div class="row py-3 ">
+                <div class="col ">
+                    <div id="carouselExampleIndicators"  class="carousel slide shadow-sm" data-bs-ride="true" style="/*height: 400px !important; overflow: hidden*/">
+                        
+                        <div class="carousel-inner rounded">
+                                                                                                <div class="carousel-item active">
+                                        <img src="/template_vitrine/assets_custom/secteur_activite/images_slider_11791215330.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                                                                                    <div class="carousel-item">
+                                        <img src="/template_vitrine/assets_custom/secteur_activite/images_slider_21792421575.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                                                                                    <div class="carousel-item">
+                                        <img src="/template_vitrine/assets_custom/secteur_activite/images_slider_31790860288.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                                            
+                        </div>
+                                                    <button class="carousel-control-prev justify-content-start px-5" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <p aria-hidden="true" style="padding: 10px;border-radius: 50px;background-color: rgba(0,0,0,0.6); color:#fff;">&#10094;</p>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button id="carousel-control-next" class="carousel-control-next justify-content-end px-5" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <p aria-hidden="true" style="padding: 10px;border-radius: 50px;background-color: rgba(0,0,0,0.6); color:#fff;">&#10095;</p>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                                            </div>
+                </div>
+            </div>
+                    </section>
+
+        <!-------------------- Qui sommes nous ------------------------>
+        <section class="content-inner mt-5" id="qui_sommes_nous">
+            <div class="container">
+                <div class="row about-style2 align-items-xl-center align-items-start">
+                    <div class="col-lg-6 col-lg-5 col-sm-5 m-b30 sticky-top">
+                        <div class="about-thumb">
+                            
+                                                                                        <video controls autoplay  style="max-width: 100%;max-height: 750px;" muted >
+                                    <source src="/template_vitrine/assets_custom/secteur_activite/fichier_qui_sommes_nous.mov">
+                                </video>
+                                                    </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-7">
+                        <div class="about-content">
+                            <div class="section-head style-2 d-block">
+                                <h3 class="title w-100">Qui sommes nous ?</h3>
+                                <p> DELAFOSSE GROUP SARL est une structure spécialisée dans la monétique, la Grande distribution (Boisson Energisante BBL) et l’Immobilier. Nous proposons à tous, des services de qualité supérieure à travers une ressource humaine disposée, courtoise et professionnelle...<br/><br/>Trouvez Nous :<br/> Abidjan, Cocody Riviera Faya, en face de la gare des taxis.</p>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------- premier Call to Action ------------------------>
+        <section class="get-in-touch" style="background-color: rgb(220,0,7)">
+           
+        </section>
+        <!-- premier Call to Action  End -->
+
+        <!-------------------- Nos secteurs d'activités ------------------------>
+        <section class="content-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-head ">
+                            <h2 class="title text-center">Nos secteurs d&#039;activités</h2>
+                            <p class="text-left" >Notre entreprise se distingue par un éventail diversifié de services, chacun conçu avec le même engagement envers l&#039;excellence. Chaque service que nous proposons est le fruit d&#039;un savoir-faire éprouvé et d&#039;une attention minutieuse aux détails, garantissant ainsi votre entière satisfaction à chaque étape de votre expérience avec nous.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+                                            <div class="col wow fadeInUp" data-wow-delay="0.2s">
+                            <a href="https://delafossegroup.com/secteur-activite/Monetique" class="card card_secteur h-100 border-0 text-decoration-none">
+                                <div class="card_secteur_media">
+                                    <img loading="lazy" src="/template_vitrine/assets_custom/secteur_activite/image_illustration_secteur_11791218642.png" alt="Monetique">
+                                    <span class="card_secteur_overlay"></span>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card_secteur_titre">Monetique</h5>
+                                    <span class="card_secteur_lien">
+                                        En savoir plus <i class="icon feather icon-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                            <a href="https://delafossegroup.com/secteur-activite/immobilier" class="card card_secteur h-100 border-0 text-decoration-none">
+                                <div class="card_secteur_media">
+                                    <img loading="lazy" src="/template_vitrine/assets_custom/secteur_activite/image_illustration_secteur_21791218661.png" alt="Immobilier">
+                                    <span class="card_secteur_overlay"></span>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card_secteur_titre">Immobilier</h5>
+                                    <span class="card_secteur_lien">
+                                        En savoir plus <i class="icon feather icon-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col wow fadeInUp" data-wow-delay="0.4s">
+                            <a href="https://delafossegroup.com/secteur-activite/Delafosse_Group_Store" class="card card_secteur h-100 border-0 text-decoration-none">
+                                <div class="card_secteur_media">
+                                    <img loading="lazy" src="/template_vitrine/assets_custom/secteur_activite/image_illustration_secteur_31791218742.png" alt="Delafosse Group Store">
+                                    <span class="card_secteur_overlay"></span>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card_secteur_titre">Delafosse Group Store</h5>
+                                    <span class="card_secteur_lien">
+                                        En savoir plus <i class="icon feather icon-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="https://delafossegroup.com/secteur-activite/Electromenager" class="card card_secteur h-100 border-0 text-decoration-none">
+                                <div class="card_secteur_media">
+                                    <img loading="lazy" src="/template_vitrine/assets_custom/secteur_activite/image_illustration_secteur_41791219453.png" alt="Electromenager">
+                                    <span class="card_secteur_overlay"></span>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card_secteur_titre">Electromenager</h5>
+                                    <span class="card_secteur_lien">
+                                        En savoir plus <i class="icon feather icon-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                                            <div class="col wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink" class="card card_secteur h-100 border-0 text-decoration-none">
+                                <div class="card_secteur_media">
+                                    <img loading="lazy" src="/template_vitrine/assets_custom/secteur_activite/banniere_image1792421475.png" alt="BBL Energy Drink">
+                                    <span class="card_secteur_overlay"></span>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card_secteur_titre">BBL Energy Drink</h5>
+                                    <span class="card_secteur_lien">
+                                        En savoir plus <i class="icon feather icon-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+
+
+        <!-------------------- second Call to Action ------------------------>
+        <section class="get-in-touch" style="background-color: rgb(220,0,7)">
+            <div class="m-r100 m-md-r0 m-sm-r0">
+                <h3 class="dz-title mb-lg-0 mb-3">Une Question ?
+                    <span>Nous sommes disponible pour vous assistez, Contactez notre standard ici</span>
+                </h3>
+            </div>
+            <a href="contact-us-1.html" class="btn btn-light">
+                <img loading="lazy" src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-phone-icon-png-image_5065646.jpg" style="height: 20px; width: 20px" />
+                &nbsp;&nbsp;
+                <i style="color: black">21 20 20 20 20</i>
+            </a>
+        </section>
+        <!-- second Call to Action  End -->
+
+        <!-------------------- Articles Recents ------------------------>
+                    <section class="content-inner">
+                <div class="container">
+                    <div class="row g-3 g-xl-4">
+                        <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="section-head ">
+                                <h2 class="title">Articles qui pourraient vous interessez</h2>
+                                <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page</p>
+    
+                            </div>
+                        </div>
+
+                         
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 m-md-b15 m-b30">
+                                <div class="shop-card style-1">
+                                    <div class="dz-media" style="border-radius: 5px !important;">
+
+                                        <img loading="lazy" class="image_illustration_produit" src="/uploaded_files/products/1754024243_3167271.jpg" style="border-radius: 0px !important; object-fit: cover;" alt="image">
+
+                                        <a href="https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405">
+                                            <div class="shop-meta text-center">
+                                                
+                                                <div class="btn btn-primary meta-icon dz-carticon">
+                                                    
+                                                    <i class="fa-solid fa-eye  "></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="shop-meta- text-center">
+
+                                            <button id="loader_ajout_au_panier_11" type="button" class="loader_ajout_au_panier btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;">
+                                                <div class="loader" style="margin-top: 0; margin-bottom:0 "></div>
+                                            </button>
+
+
+                                            <button id="btn_ajout_au_panier_11" type="button" class="btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;" onclick="ajouter_au_panier('11','1','NzPSXtRTRDefE56OqJ2U8ZgWGbuFuscXKnhiBHun')" >
+                                                <span >Ajouter au panier</span>
+                                            </button>
+
+                                            <a href="https://delafossegroup.com/boutique/finalisation/panier" id="btn_terminer_la_commande_11" type="submit" class="btn btn-secondary btn-md btn_terminer_la_commande" style="width: 100%;border-radius: 5px !important; background-color: rgba(209,0,10,0.6); border-color: rgba(209,0,10,0.6)">
+                                                
+                                                <span class="">Acceder au panier</span>
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="dz-content-" style="padding: 5px">
+                                        <h5 class="price">400 000 F</h5>
+                                        <h5 class="title"><a href="shop-list.html">SMART TECHNOLOGY Congélateur Coffre – Gris – STCC-720</a></h5>
+                                        <p>
+                                            <small style="font-size: 10px" >Partager :</small>
+                                            &nbsp;&nbsp;
+                                            <a href="whatsapp://send/?url=https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405">
+                                                <i class="icon feather icon-facebook dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405">
+                                                <i class="icon feather icon-twitter dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <i class="icon feather icon-copy dz-heart" onclick="navigator.clipboard.writeText('https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405');alert('copie bien effectuée');" ></i>
+                                        </p>
+                                    </div>
+                                    <div class="product-tag">
+                                                                                    <span class="badge ">-10% </span>
+                                                                            </div>
+                                </div>
+                            </div>
+                         
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 m-md-b15 m-b30">
+                                <div class="shop-card style-1">
+                                    <div class="dz-media" style="border-radius: 5px !important;">
+
+                                        <img loading="lazy" class="image_illustration_produit" src="/uploaded_files/products/1756830711_1911677.jpeg" style="border-radius: 0px !important; object-fit: cover;" alt="image">
+
+                                        <a href="https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546">
+                                            <div class="shop-meta text-center">
+                                                
+                                                <div class="btn btn-primary meta-icon dz-carticon">
+                                                    
+                                                    <i class="fa-solid fa-eye  "></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="shop-meta- text-center">
+
+                                            <button id="loader_ajout_au_panier_67" type="button" class="loader_ajout_au_panier btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;">
+                                                <div class="loader" style="margin-top: 0; margin-bottom:0 "></div>
+                                            </button>
+
+
+                                            <button id="btn_ajout_au_panier_67" type="button" class="btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;" onclick="ajouter_au_panier('67','1','NzPSXtRTRDefE56OqJ2U8ZgWGbuFuscXKnhiBHun')" >
+                                                <span >Ajouter au panier</span>
+                                            </button>
+
+                                            <a href="https://delafossegroup.com/boutique/finalisation/panier" id="btn_terminer_la_commande_67" type="submit" class="btn btn-secondary btn-md btn_terminer_la_commande" style="width: 100%;border-radius: 5px !important; background-color: rgba(209,0,10,0.6); border-color: rgba(209,0,10,0.6)">
+                                                
+                                                <span class="">Acceder au panier</span>
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="dz-content-" style="padding: 5px">
+                                        <h5 class="price">400 000 F</h5>
+                                        <h5 class="title"><a href="shop-list.html">Smart TV ATL-65V6S - 65 pouces - / SMART TV/ 4K UHD/</a></h5>
+                                        <p>
+                                            <small style="font-size: 10px" >Partager :</small>
+                                            &nbsp;&nbsp;
+                                            <a href="whatsapp://send/?url=https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546">
+                                                <i class="icon feather icon-facebook dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546">
+                                                <i class="icon feather icon-twitter dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <i class="icon feather icon-copy dz-heart" onclick="navigator.clipboard.writeText('https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546');alert('copie bien effectuée');" ></i>
+                                        </p>
+                                    </div>
+                                    <div class="product-tag">
+                                                                                    <span class="badge ">-17% </span>
+                                                                            </div>
+                                </div>
+                            </div>
+                         
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 m-md-b15 m-b30">
+                                <div class="shop-card style-1">
+                                    <div class="dz-media" style="border-radius: 5px !important;">
+
+                                        <img loading="lazy" class="image_illustration_produit" src="/uploaded_files/products/1755792617_3068214.jpg" style="border-radius: 0px !important; object-fit: cover;" alt="image">
+
+                                        <a href="https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977">
+                                            <div class="shop-meta text-center">
+                                                
+                                                <div class="btn btn-primary meta-icon dz-carticon">
+                                                    
+                                                    <i class="fa-solid fa-eye  "></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="shop-meta- text-center">
+
+                                            <button id="loader_ajout_au_panier_8" type="button" class="loader_ajout_au_panier btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;">
+                                                <div class="loader" style="margin-top: 0; margin-bottom:0 "></div>
+                                            </button>
+
+
+                                            <button id="btn_ajout_au_panier_8" type="button" class="btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;" onclick="ajouter_au_panier('8','1','NzPSXtRTRDefE56OqJ2U8ZgWGbuFuscXKnhiBHun')" >
+                                                <span >Ajouter au panier</span>
+                                            </button>
+
+                                            <a href="https://delafossegroup.com/boutique/finalisation/panier" id="btn_terminer_la_commande_8" type="submit" class="btn btn-secondary btn-md btn_terminer_la_commande" style="width: 100%;border-radius: 5px !important; background-color: rgba(209,0,10,0.6); border-color: rgba(209,0,10,0.6)">
+                                                
+                                                <span class="">Acceder au panier</span>
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="dz-content-" style="padding: 5px">
+                                        <h5 class="price">80 000 F</h5>
+                                        <h5 class="title"><a href="shop-list.html">ATL Machine à Café - 500ml - 1200W - Noir - ATL-3AC276</a></h5>
+                                        <p>
+                                            <small style="font-size: 10px" >Partager :</small>
+                                            &nbsp;&nbsp;
+                                            <a href="whatsapp://send/?url=https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977">
+                                                <i class="icon feather icon-facebook dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977">
+                                                <i class="icon feather icon-twitter dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <i class="icon feather icon-copy dz-heart" onclick="navigator.clipboard.writeText('https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977');alert('copie bien effectuée');" ></i>
+                                        </p>
+                                    </div>
+                                    <div class="product-tag">
+                                                                                    <span class="badge ">-12% </span>
+                                                                            </div>
+                                </div>
+                            </div>
+                         
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 m-md-b15 m-b30">
+                                <div class="shop-card style-1">
+                                    <div class="dz-media" style="border-radius: 5px !important;">
+
+                                        <img loading="lazy" class="image_illustration_produit" src="/uploaded_files/products/1761718805_4644252.jpg" style="border-radius: 0px !important; object-fit: cover;" alt="image">
+
+                                        <a href="https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493">
+                                            <div class="shop-meta text-center">
+                                                
+                                                <div class="btn btn-primary meta-icon dz-carticon">
+                                                    
+                                                    <i class="fa-solid fa-eye  "></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="shop-meta- text-center">
+
+                                            <button id="loader_ajout_au_panier_81" type="button" class="loader_ajout_au_panier btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;">
+                                                <div class="loader" style="margin-top: 0; margin-bottom:0 "></div>
+                                            </button>
+
+
+                                            <button id="btn_ajout_au_panier_81" type="button" class="btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;" onclick="ajouter_au_panier('81','1','NzPSXtRTRDefE56OqJ2U8ZgWGbuFuscXKnhiBHun')" >
+                                                <span >Ajouter au panier</span>
+                                            </button>
+
+                                            <a href="https://delafossegroup.com/boutique/finalisation/panier" id="btn_terminer_la_commande_81" type="submit" class="btn btn-secondary btn-md btn_terminer_la_commande" style="width: 100%;border-radius: 5px !important; background-color: rgba(209,0,10,0.6); border-color: rgba(209,0,10,0.6)">
+                                                
+                                                <span class="">Acceder au panier</span>
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="dz-content-" style="padding: 5px">
+                                        <h5 class="price">130 000 F</h5>
+                                        <h5 class="title"><a href="shop-list.html">Matelas CIL Medicodorsal Extra Ferme PH8 – 3 places (180 × 190 cm) epaisseur 20 cm</a></h5>
+                                        <p>
+                                            <small style="font-size: 10px" >Partager :</small>
+                                            &nbsp;&nbsp;
+                                            <a href="whatsapp://send/?url=https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493">
+                                                <i class="icon feather icon-facebook dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493">
+                                                <i class="icon feather icon-twitter dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <i class="icon feather icon-copy dz-heart" onclick="navigator.clipboard.writeText('https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493');alert('copie bien effectuée');" ></i>
+                                        </p>
+                                    </div>
+                                    <div class="product-tag">
+                                                                            </div>
+                                </div>
+                            </div>
+                         
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 m-md-b15 m-b30">
+                                <div class="shop-card style-1">
+                                    <div class="dz-media" style="border-radius: 5px !important;">
+
+                                        <img loading="lazy" class="image_illustration_produit" src="/uploaded_files/products/1756906364_3740771.jpg" style="border-radius: 0px !important; object-fit: cover;" alt="image">
+
+                                        <a href="https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640">
+                                            <div class="shop-meta text-center">
+                                                
+                                                <div class="btn btn-primary meta-icon dz-carticon">
+                                                    
+                                                    <i class="fa-solid fa-eye  "></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="shop-meta- text-center">
+
+                                            <button id="loader_ajout_au_panier_73" type="button" class="loader_ajout_au_panier btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;">
+                                                <div class="loader" style="margin-top: 0; margin-bottom:0 "></div>
+                                            </button>
+
+
+                                            <button id="btn_ajout_au_panier_73" type="button" class="btn btn-secondary btn-md" style="width: 100%;border-radius: 5px !important;" onclick="ajouter_au_panier('73','1','NzPSXtRTRDefE56OqJ2U8ZgWGbuFuscXKnhiBHun')" >
+                                                <span >Ajouter au panier</span>
+                                            </button>
+
+                                            <a href="https://delafossegroup.com/boutique/finalisation/panier" id="btn_terminer_la_commande_73" type="submit" class="btn btn-secondary btn-md btn_terminer_la_commande" style="width: 100%;border-radius: 5px !important; background-color: rgba(209,0,10,0.6); border-color: rgba(209,0,10,0.6)">
+                                                
+                                                <span class="">Acceder au panier</span>
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="dz-content-" style="padding: 5px">
+                                        <h5 class="price">300 000 F</h5>
+                                        <h5 class="title"><a href="shop-list.html">Congelateur horizontal SMART TECHNOLOGY - STCC - 640</a></h5>
+                                        <p>
+                                            <small style="font-size: 10px" >Partager :</small>
+                                            &nbsp;&nbsp;
+                                            <a href="whatsapp://send/?url=https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640">
+                                                <i class="icon feather icon-facebook dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <a target="_blank" href="https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640">
+                                                <i class="icon feather icon-twitter dz-heart" ></i>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                            <i class="icon feather icon-copy dz-heart" onclick="navigator.clipboard.writeText('https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640');alert('copie bien effectuée');" ></i>
+                                        </p>
+                                    </div>
+                                    <div class="product-tag">
+                                                                                    <span class="badge ">-5% </span>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6 wow fadeInUp" data-wow-delay="0.7s" style="position: relative">
+                            <div class="dz-team style-1 m-md-b0 m-sm-b0 m-b30" >
+                                <div id="div_btn_voir_plus_darticles">
+                                    <a style="vertical-align: middle" class="btn btn-secondary me-3" href="https://delafossegroup.com/boutique">Voir plus d'articles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer style-1 bg-light">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="widget widget_about me-2">
+                            <div class="footer-logo logo-white">
+                                <a href="https://delafossegroup.com">
+                                                                            <img src="/uploaded_files/logo_principal_uploaded.png" width="100px">
+                                                                    </a>
+                            </div>
+                            <ul class="widget-address">
+                                <li>
+                                    <p><span>Addresse</span> : Abidjan, Cocody Riviera Faya, en face de la gare des taxis.</p>
+                                </li>
+                                <li>
+                                    <p><span>E-mail</span> :  delafossegroupsarl@gmail.com </p>
+                                </li>
+                                <li>
+                                    <p><span>Téléphone</span> :  +225 21 xx xx xx </p>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Nos Secteurs d'Activités</h5>
+                            <ul>
+                                <li><a href="https://delafossegroup.com/boutique">La Boutique</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/bestcash">BestCash CI</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink">BBL Energy Drink</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/immobilier">Immobilier</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/Delafosse_Group_Store">Delafosse Group Store</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/Mini_Market">Mini Market de Gros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Reseaux Sociaux</h5>
+                            <ul>
+                                                                                                            <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61579061344571"> Delafosse GROUP Officiel</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=100066401981573"> Delafosse Group Monetique</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=100081864573883"> Delafosse Group Immobilier</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61561936234339"> Delafosse Group Store</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61571046369695&amp;sk=reels_tab"> BBL Energy Drink Cote d&#039;Ivoire</a></li>
+                                                                    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Top End -->
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row fb-inner wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-md-12 text-start">
+                        <p class="copyright-text">© <span class="current-year">2024</span> <a href="#">Delafosse
+                                Group</a>. </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-end">
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-md-center justify-content-xl-end">
+                            <span class="me-3">Tous droits réservés. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+    </footer>
+    <!-- Footer End -->
+
+    <button class="scroltop" type="button"><i class="fas fa-arrow-up"></i></button>
+
+</div>
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="/template_vitrine/js/jquery.min.js"></script><!-- JQUERY MIN JS -->
+<script src="/template_vitrine/vendor/wow/wow.min.js"></script><!-- WOW JS -->
+<script src="/template_vitrine/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP MIN JS -->
+<script src="/template_vitrine/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<!-- BOOTSTRAP SELECT MIN JS -->
+<script src="/template_vitrine/vendor/bootstrap-touchspin/bootstrap-touchspin.js"></script>
+<!-- BOOTSTRAP TOUCHSPIN JS -->
+<script src="/template_vitrine/vendor/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+<script src="/template_vitrine/vendor/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+
+<script src="/template_vitrine/vendor/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED-->
+<script src="/template_vitrine/vendor/masonry/masonry-4.2.2.js"></script><!-- MASONRY -->
+<script src="/template_vitrine/vendor/masonry/isotope.pkgd.min.js"></script><!-- ISOTOPE -->
+<script src="/template_vitrine/vendor/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
+
+
+
+<script src="/template_vitrine/js/dz.ajax.js"></script><!-- AJAX -->
+<script src="/template_vitrine/js/custom.js"></script><!-- CUSTOM JS -->
+
+<script>
+
+    let nom_cle = "slug_device";
+
+    console.log(localStorage.getItem(nom_cle));
+    let key_device_exist = localStorage.getItem(nom_cle);
+    if(key_device_exist == null){
+
+        const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
+        let le_slug = deviceName + '+'+ Date.now() + '-' + Math.floor(Math.random() * 99999999) + '-' + Math.floor(Math.random() * 999999999) ;
+        // alert(le_slug);
+        let result = localStorage.setItem(nom_cle,le_slug);
+
+        key_device_exist = deviceName;
+    }
+
+
+    let route_set_slug = 'https://delafossegroup.com/set-slug-utilisateur-in-session/PLACEHOLDER';
+    route_set_slug = route_set_slug.replace('PLACEHOLDER', key_device_exist);
+    let span_nb_produit_en_panier = document.getElementById('span_nb_produit_en_panier');
+    // alert(route_set_slug);
+    fetch(route_set_slug).then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        span_nb_produit_en_panier.innerText = data.nb_produit_en_panier;
+        console.log(data);
+    }).catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
+
+</script>
+
+    <script>
+        function ajouter_au_panier(id_produit,quantite,csrf_token){
+
+            let div_loader = document.getElementById('loader_ajout_au_panier_'+id_produit);
+            let span_nb_produit_en_panier = document.getElementById('span_nb_produit_en_panier');
+            let btn_ajout_au_panier = document.getElementById('btn_ajout_au_panier_'+id_produit);
+            let btn_terminer_la_commande = document.getElementById('btn_terminer_la_commande_'+id_produit);
+            let div_notification = document.getElementById('div_notification');
+
+            let route_ajouter_au_panier = "https://delafossegroup.com/boutique/panier/ajouter-produit";
+
+            let formData = new FormData();
+            formData.append('id_produit', id_produit);
+            formData.append('quantite', quantite);
+            formData.append('_token', csrf_token);
+
+            div_loader.style.display = 'block';
+            btn_ajout_au_panier.style.display = 'none';
+
+            fetch(
+                route_ajouter_au_panier,
+                {
+                    body: formData,
+                    method: "post"
+                }
+            )
+                .then(
+
+                    function(reponse_brute){
+                        console.log('----');
+                        console.log(reponse_brute);
+                        console.log('----');
+                        return reponse_brute.json();
+                    }
+                )
+                .then(
+                    function(data){
+                        console.log('--data---')
+                        console.log(data.notification)
+
+                        let node_notif = document.createElement('div');
+                        node_notif.className = 'alert alert-success text-center';
+                        node_notif.innerText = data.notification;
+                        node_notif.style = 'margin:0px';
+                        node_notif.id = data.time;
+
+                        /*console.log('----');
+                        console.log(data);
+                        console.log('----');*/
+
+                        // setTimeout(function (){
+                        div_notification.appendChild(node_notif);
+
+                        span_nb_produit_en_panier.innerText = data.nb_produit_en_panier;
+                        div_loader.style.display = 'none';
+                        btn_terminer_la_commande.style.display = 'block';
+                        let la_nouvelle_div = document.getElementById(data.time);
+                        setTimeout(function (){
+                            la_nouvelle_div.remove();
+                        },3000);
+                        // }, 3000)
+
+
+                    }
+                ).catch(
+                function (err){
+                    console.log('Fetch Error :-S', err);
+                }
+            )
+
+            console.log(id_produit,quantite);
+        }
+
+        setTimeout(function(){
+            document.getElementById("carousel-control-next").click();
+        },2000)
+
+    </script>
+</body>
+</html>

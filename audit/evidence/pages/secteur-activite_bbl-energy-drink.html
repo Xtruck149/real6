@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Title -->
+    <title>Delafosse Group SARL</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Yves LADDE">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="keywords"
+          content="Delafosse Group SARL, Bestcash CI, immobilier, terrains, location, fashion, order, shopping, store, fashion design, fashion store, responsive design, fashion showcase, modern design, fashion technology, e-shop, ecommerce web, eCommerce Website, minimal shop, online shop, online shopping, pixio, user experience, Design Elements, Trendy, Stylish, User-Friendly, Navigation, Product Display, Branding, Development, Visual Design, UI/UX, Website, Web Design">
+    <meta name="description"
+          content="Delafosse Group, la prestation au-delà du Service !">
+
+    <meta property="og:title" content="Delafosse Group SARL: la prestation au-delà du Service !">
+    <meta property="og:description"
+          content="Delafosse Group, la prestation au-delà du Service !">
+    <meta property="og:image" content="https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png">
+
+    <!-- TWITTER META -->
+    <meta name="twitter:title" content="Delafosse Group SARL">
+    <meta name="twitter:description"
+          content="Delafosse Group SARL: la prestation au-delà du Service !">
+    <meta name="twitter:image" content="https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" type="image/x-icon" href="/template_vitrine/assets_custom/logos/logo_icone.ico">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" type="text/css"
+          href="/template_vitrine/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lightgallery.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lg-thumbnail.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lg-zoom.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        #loader_gestion_panier{
+            display: none;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(255,255,255,0.4);
+            z-index: 99999999;
+            text-align: center;
+        }
+        #loader_gestion_panier img{
+
+            position: absolute;
+            top: 30%;
+            /*bottom: 0px;*/
+            right: 40%;
+            /*right: 0px;*/
+            /*width: 50px;*/
+            /*height: 50px;*/
+        }
+
+        .mobile_only{
+            display: none;
+        }
+
+        
+        @media screen and (max-width: 800px) {
+            .mobile_only{
+                display: block;
+            }
+        }
+
+    </style>
+        <style>
+        html { scroll-behavior: smooth; }
+
+        /* ===== Palette BBL ===== */
+        :root {
+            --bbl-noir: #0d0d0d;
+            --bbl-or: #b9711f;
+            --bbl-or-clair: #e6a847;
+            --bbl-rouge: #c8102e;
+            --bbl-creme: #fff8ee;
+        }
+
+        .bbl-landing { font-family: 'DM Sans', sans-serif; color: #1a1a1a; }
+
+        /* ===== HERO CAROUSEL (présenté comme celui de l'accueil, avec de l'espace autour) ===== */
+        .bbl-hero-carousel-wrap { background: var(--bbl-creme); }
+        .bbl-hero-carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+        }
+        .bbl-hero-slide {
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 991px) { .bbl-hero-slide { min-height: 380px; } }
+        @media (max-width: 575px) { .bbl-hero-slide { min-height: 260px; } }
+        .bbl-hero-slide::before {
+            content: "";
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(13,13,13,0.85) 0%, rgba(42,26,8,0.7) 60%, rgba(185,113,31,0.55) 100%);
+        }
+        .bbl-hero-slide .container { position: relative; z-index: 2; }
+        .bbl-hero .bbl-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 30px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            backdrop-filter: blur(4px);
+        }
+        .bbl-hero h1 {
+            font-size: clamp(2.4rem, 6vw, 5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 18px;
+            text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+        }
+        .bbl-hero h1 span { color: var(--bbl-or-clair); }
+        .bbl-hero p.lead {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            max-width: 620px;
+            opacity: 0.92;
+            margin-bottom: 32px;
+        }
+        .bbl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 34px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .bbl-btn-primary {
+            background: linear-gradient(135deg, var(--bbl-or-clair), var(--bbl-or));
+            color: #1a1a1a;
+            box-shadow: 0 10px 30px rgba(185,113,31,0.45);
+        }
+        .bbl-btn-primary:hover { transform: translateY(-3px); color: #1a1a1a; box-shadow: 0 16px 40px rgba(185,113,31,0.6); }
+        .bbl-btn-ghost {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+        .bbl-btn-ghost:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+        .bbl-hero-img {
+            max-width: 100%;
+            max-height: 70vh;
+            object-fit: contain;
+            filter: drop-shadow(0 25px 50px rgba(0,0,0,0.55));
+            animation: bblFloat 5s ease-in-out infinite;
+        }
+        @keyframes bblFloat {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-18px); }
+        }
+
+        .bbl-hero-carousel .carousel-control-prev,
+        .bbl-hero-carousel .carousel-control-next {
+            width: 8%;
+            opacity: 0.7;
+            z-index: 5;
+        }
+        .bbl-hero-carousel .carousel-indicators { z-index: 5; margin-bottom: 2rem; }
+        .bbl-hero-carousel .carousel-indicators button { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; background: transparent; opacity: 0.5; }
+        .bbl-hero-carousel .carousel-indicators button.active { background: var(--bbl-or-clair); border-color: var(--bbl-or-clair); opacity: 1; }
+
+        /* ===== SECTION GENERIQUE ===== */
+        .bbl-section { padding: 90px 0; }
+        .bbl-section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+        .bbl-section-sub {
+            font-size: 1.05rem;
+            opacity: 0.75;
+            max-width: 680px;
+            margin: 0 auto 50px;
+        }
+        .bbl-eyebrow {
+            color: var(--bbl-or);
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        /* ===== FEATURES ===== */
+        .bbl-feature-card {
+            background: #fff;
+            border-radius: 22px;
+            padding: 38px 28px;
+            height: 100%;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.07);
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+        .bbl-feature-card:hover { transform: translateY(-8px); box-shadow: 0 22px 55px rgba(185,113,31,0.18); }
+        .bbl-feature-icon {
+            width: 64px; height: 64px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 16px;
+            font-size: 28px;
+            margin-bottom: 22px;
+            background: linear-gradient(135deg, var(--bbl-or-clair), var(--bbl-or));
+            color: #fff;
+        }
+        .bbl-feature-card h4 { font-weight: 800; margin-bottom: 10px; }
+        .bbl-feature-card p { color: #555; margin: 0; }
+
+        /* ===== SAVEURS ===== */
+        .bbl-saveurs { background: var(--bbl-creme); }
+        .bbl-saveur-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.1);
+            transition: transform .3s ease;
+            background: #fff;
+        }
+        .bbl-saveur-card:hover { transform: translateY(-10px) scale(1.02); }
+        .bbl-saveur-visual {
+            height: 220px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 4rem;
+            color: #fff;
+            position: relative;
+        }
+        .bbl-saveur-visual::after {
+            content: ""; position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent, rgba(0,0,0,0.25));
+        }
+        .bbl-saveur-orange .bbl-saveur-visual { background: linear-gradient(135deg, #ff8c1a, #ff5722); }
+        .bbl-saveur-citron .bbl-saveur-visual { background: linear-gradient(135deg, #fdd835, #c0ca33); color: #3a3a1a; }
+        .bbl-saveur-bissap .bbl-saveur-visual { background: linear-gradient(135deg, #c62828, #8e0000); }
+        .bbl-saveur-card .bbl-saveur-body { padding: 24px; }
+        .bbl-saveur-card h5 { font-weight: 800; margin-bottom: 6px; }
+        .bbl-saveur-card .bbl-saveur-body p { color: #555; margin: 0; font-size: 0.95rem; }
+
+        /* ===== MOMENTS ===== */
+        .bbl-moments {
+            background: linear-gradient(135deg, var(--bbl-noir), #2a1a08);
+            color: #fff;
+        }
+        .bbl-moments .bbl-eyebrow { color: var(--bbl-or-clair); }
+        .bbl-moments .bbl-section-title { color: #fff; }
+        .bbl-moment-item {
+            text-align: center;
+            padding: 28px 18px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: background .3s ease;
+            height: 100%;
+        }
+        .bbl-moment-item:hover { background: rgba(185,113,31,0.18); }
+        .bbl-moment-emoji { font-size: 2.6rem; margin-bottom: 14px; }
+        .bbl-moment-item h6 { font-weight: 700; margin-bottom: 6px; }
+        .bbl-moment-item p { opacity: 0.75; margin: 0; font-size: 0.92rem; }
+
+        /* ===== VIDEO ===== */
+        .bbl-video-section {
+            background: linear-gradient(135deg, #1a0a00, #2a1a08);
+            color: #fff;
+            padding: 90px 0;
+        }
+        .bbl-video-section .bbl-eyebrow { color: var(--bbl-or-clair); }
+        .bbl-video-section .bbl-section-title { color: #fff; }
+        .bbl-video-wrapper {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+            aspect-ratio: 16/9;
+            background: #000;
+        }
+        .bbl-video-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .bbl-video-play {
+            position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            background: rgba(0,0,0,0.35);
+            transition: opacity .3s ease;
+            z-index: 2;
+        }
+        .bbl-video-play.hidden { opacity: 0; pointer-events: none; }
+        .bbl-video-play-btn {
+            width: 90px; height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--bbl-or-clair), var(--bbl-or));
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px; color: #fff;
+            box-shadow: 0 10px 40px rgba(185,113,31,0.6);
+            transition: transform .3s ease;
+        }
+        .bbl-video-play:hover .bbl-video-play-btn { transform: scale(1.1); }
+
+        /* ===== GALERIE ===== */
+        .bbl-gallery { background: var(--bbl-creme); }
+        .bbl-gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .bbl-gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform .3s ease;
+        }
+        .bbl-gallery-item:hover { transform: scale(1.03); }
+        .bbl-gallery-item::after {
+            content: ""; position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.5));
+            opacity: 0; transition: opacity .3s ease;
+        }
+        .bbl-gallery-item:hover::after { opacity: 1; }
+        .bbl-gallery-icon {
+            position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.4rem; color: #fff;
+            opacity: 0; transition: opacity .3s ease;
+            z-index: 2;
+        }
+        .bbl-gallery-item:hover .bbl-gallery-icon { opacity: 1; }
+        .bbl-gallery-item.is-video .bbl-gallery-icon {
+            opacity: 1;
+            background: rgba(0,0,0,0.25);
+        }
+        .bbl-gallery-item.is-video:hover .bbl-gallery-icon { background: rgba(0,0,0,0.4); }
+        .bbl-gallery-item .bbl-gallery-tag {
+            position: absolute; top: 10px; left: 10px;
+            background: var(--bbl-rouge); color: #fff;
+            font-size: 11px; font-weight: 700; text-transform: uppercase;
+            padding: 3px 10px; border-radius: 20px; z-index: 3;
+        }
+        .bbl-gallery-item.is-video .bbl-gallery-tag { background: var(--bbl-or); }
+
+        .bbl-gallery-filters { text-align: center; margin-bottom: 30px; }
+        .bbl-gallery-filters button {
+            background: transparent; border: 1px solid rgba(0,0,0,0.15);
+            padding: 8px 22px; border-radius: 30px; margin: 0 4px;
+            font-weight: 600; color: #555; transition: all .25s ease;
+        }
+        .bbl-gallery-filters button.active,
+        .bbl-gallery-filters button:hover {
+            background: var(--bbl-or); color: #fff; border-color: var(--bbl-or);
+        }
+
+        /* ===== MODAL GALERIE (carrousel + miniatures) ===== */
+        .bbl-gallery-modal .modal-content {
+            background: #0d0d0d;
+            border: none;
+        }
+        .bbl-gallery-modal .modal-body {
+            height: 100vh;
+            position: relative;
+        }
+        .bbl-modal-close {
+            position: absolute;
+            top: 18px; right: 18px;
+            z-index: 20;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: rgba(13,13,13,0.75) !important;
+            background-size: 16px;
+            border: 2px solid rgba(255,255,255,0.5);
+            opacity: 1;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+            transition: background-color .2s ease, border-color .2s ease, transform .2s ease;
+        }
+        .bbl-modal-close:hover {
+            opacity: 1;
+            background-color: var(--bbl-or) !important;
+            border-color: var(--bbl-or-clair);
+            transform: scale(1.08);
+        }
+        @media (max-width: 768px) {
+            .bbl-modal-close { width: 40px; height: 40px; top: 12px; right: 12px; }
+        }
+        .bbl-modal-carousel {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            align-items: center;
+        }
+        .bbl-modal-carousel .carousel-inner,
+        .bbl-modal-carousel .carousel-item {
+            height: 100%;
+        }
+        .bbl-modal-slide {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 70px;
+        }
+        .bbl-modal-media {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+        }
+        .bbl-gallery-modal .carousel-control-prev,
+        .bbl-gallery-modal .carousel-control-next {
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: rgba(255,255,255,0.12);
+            opacity: 0.85;
+        }
+        .bbl-gallery-modal .carousel-control-prev { left: 18px; }
+        .bbl-gallery-modal .carousel-control-next { right: 18px; }
+        .bbl-gallery-modal .carousel-control-prev:hover,
+        .bbl-gallery-modal .carousel-control-next:hover { background: rgba(185,113,31,0.6); opacity: 1; }
+        .bbl-modal-counter {
+            text-align: center;
+            color: rgba(255,255,255,0.75);
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 6px 0;
+        }
+        .bbl-modal-thumbs {
+            flex: 0 0 auto;
+            overflow-x: auto;
+            padding: 6px 20px 22px;
+            background: #0d0d0d;
+        }
+        .bbl-modal-thumbs-inner {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            min-width: min-content;
+            margin: 0 auto;
+        }
+        .bbl-modal-thumb {
+            position: relative;
+            flex: 0 0 auto;
+            width: 84px;
+            height: 60px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.55;
+            cursor: pointer;
+            transition: opacity .2s ease, border-color .2s ease, transform .2s ease;
+        }
+        .bbl-modal-thumb:hover { opacity: 0.85; transform: translateY(-2px); }
+        .bbl-modal-thumb.active {
+            opacity: 1;
+            border-color: var(--bbl-or-clair);
+        }
+        .bbl-modal-thumb-play {
+            position: absolute; inset: 0;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(0,0,0,0.35);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .bbl-modal-slide { padding: 16px 50px; }
+            .bbl-gallery-modal .carousel-control-prev,
+            .bbl-gallery-modal .carousel-control-next { width: 44px; height: 44px; }
+            .bbl-modal-thumb { width: 60px; height: 44px; }
+        }
+
+        @media (max-width: 991px) {
+            .bbl-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 575px) {
+            .bbl-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ===== CTA ===== */
+        .bbl-cta {
+            background: linear-gradient(135deg, var(--bbl-rouge), var(--bbl-or));
+            color: #fff;
+            border-radius: 40px;
+            padding: 70px 40px;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(200,16,46,0.3);
+        }
+        .bbl-cta h2 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; margin-bottom: 14px; }
+        .bbl-cta p { font-size: 1.1rem; opacity: 0.92; margin-bottom: 28px; }
+        .bbl-cta .bbl-btn-primary { background: #fff; color: var(--bbl-rouge); box-shadow: 0 12px 30px rgba(0,0,0,0.25); }
+
+        /* ===== SEPARATEUR ===== */
+        .bbl-separator {
+            background: var(--bbl-rouge);
+            color: #fff;
+            padding: 26px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+        .bbl-separator img { width: 32px; height: 32px; vertical-align: middle; margin: 0 12px; }
+
+        @media (max-width: 768px) {
+            .bbl-hero-img { display: none; }
+            .bbl-section { padding: 60px 0; }
+            .bbl-cta { border-radius: 24px; padding: 50px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wraper">
+
+
+
+
+    <!-- Header Star -->
+    <header class="site-header mo-left header">
+        <!-- Main Header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
+            <div class="main-bar clearfix">
+                <div class="container-fluid clearfix d-lg-flex d-block" style="position: relative">
+                    <!-- Website Logo -->
+                    <div class="logo-header logo-dark me-md-5">
+                        &nbsp;
+                        <a href="https://delafossegroup.com">
+                                                            <img src="/uploaded_files/logo_principal_uploaded.png" width="100px">
+                                                    </a>
+                    </div>
+
+                    <!-- Nav Toggle Button -->
+
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Main Nav -->
+                    <div class="header-nav w3menu navbar-collapse collapse justify-content-start"
+                         id="navbarNavDropdown">
+                        <div class="logo-header logo-dark">
+                            <a href="https://delafossegroup.com"><img src="/template_vitrine/assets_custom/logos/logo_officiel.png" alt=""></a>
+                        </div>
+                        <ul class=" nav navbar-nav">
+                            <li class="auto-width menu-left ">
+                                <a href="https://delafossegroup.com"><span>Acceuil</span></a>
+                            </li>
+                            
+                            
+                            <li class="" ><a href="https://delafossegroup.com/secteur-activite/Monetique">Monetique</a></li>
+                            
+                            <li class=""><a href="https://delafossegroup.com/secteur-activite/Electromenager">Electromenager</a></li>
+                            <li class="active"><a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink">BBL Energy Drink</a></li>
+
+
+                            <li class="  ">
+                                <a href="https://delafossegroup.com/bien-immobilier"><span>Biens immobiliers</span></a>
+                            </li>
+
+                            <li class=" ">
+                                <a href="https://delafossegroup.com/boutique"><span>Boutique</span></a>
+                            </li>
+
+                            <li class="nav-item cart-link mobile_only">
+                                <a href="https://delafossegroup.com/login" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                    Mon espace
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dz-social-icon">
+                           
+                        </div>
+                    </div>
+
+                    <!-- EXTRA NAV -->
+                    <div class="extra-nav">
+                        <div class="extra-cell">
+                            <ul class="header-right">
+                                
+                                <li class="nav-item cart-link">
+                                    
+                                    <a href="https://delafossegroup.com/boutique/finalisation/panier" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                        <i class="iconly-Broken-Buy"></i>
+                                        <span class="badge badge-circle" id="span_nb_produit_en_panier"></span>
+                                        &nbsp;
+                                        Panier &nbsp;&nbsp;
+                                    </a>
+                                </li>
+                                <li class="nav-item cart-link">
+                                    <a href="https://delafossegroup.com/login" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                        Mon espace
+                                    </a>
+                                </li>
+
+                              
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="div_notification" style="position: absolute;top: 80px;z-index: 99999999;left: 0px;right: 0px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header End -->
+
+
+
+        
+    </header>
+    <!-- Header End -->
+        
+    <div class="bbl-landing">
+
+        <!-- ===== HERO CAROUSEL (multi-slides), présenté comme celui de l'accueil avec de l'espace autour ===== -->
+        <section class="bbl-hero-carousel-wrap">
+            <div class="container">
+                <div class="row pt-4 pt-lg-5">
+                    <div class="col text-center">
+                        <div class="bbl-eyebrow"> BBL Energy Drink • La force qui vient du Coeur de Lion <!-- Energy Drink • Coeur de Lion --> </div>
+                        <h1 class="bbl-section-title">BBL Energy Drink • La force qui vient du Coeur de Lion</h1>
+                    </div>
+                </div>
+                <div class="row py-4 py-lg-5">
+                    <div class="col">
+                        <div id="bblHeroCarousel" class="carousel slide bbl-hero-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+                            <div class="carousel-indicators">
+                                                                    <button type="button" data-bs-target="#bblHeroCarousel" data-bs-slide-to="0"
+                                            class="active" aria-label="Slide 1"></button>
+                                                                    <button type="button" data-bs-target="#bblHeroCarousel" data-bs-slide-to="1"
+                                            class="" aria-label="Slide 2"></button>
+                                                                    <button type="button" data-bs-target="#bblHeroCarousel" data-bs-slide-to="2"
+                                            class="" aria-label="Slide 3"></button>
+                                                            </div>
+                            <div class="carousel-inner">
+                                                                    <div class="carousel-item active">
+                                        <div class="bbl-hero-slide" style="background-image: url('/template_vitrine/assets_custom/secteur_activite/banniere_image1792421475.png')">
+                                            
+                                        </div>
+                                    </div>
+                                                                    <div class="carousel-item ">
+                                        <div class="bbl-hero-slide" style="background-image: url('/template_vitrine/assets_custom/secteur_activite/banniere_image_21791219527.png')">
+                                            
+                                        </div>
+                                    </div>
+                                                                    <div class="carousel-item ">
+                                        <div class="bbl-hero-slide" style="background-image: url('/template_vitrine/assets_custom/secteur_activite/banniere_image_31792421475.jpg')">
+                                            
+                                        </div>
+                                    </div>
+                                                            </div>
+                            <button class="carousel-control-prev justify-content-start px-4" type="button" data-bs-target="#bblHeroCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next justify-content-end px-4" type="button" data-bs-target="#bblHeroCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SEPARATEUR ===== -->
+                <div class="bbl-separator">
+                            <img src="/template_vitrine/assets_custom/secteur_activite/separateur_image1790685196.png" alt="">
+                        Réveillez votre énergie. Vivez chaque instant avec intensité
+                            <img src="/template_vitrine/assets_custom/secteur_activite/separateur_image1790685196.png" alt="">
+                    </div>
+        
+        
+
+        <!-- ===== SAVEURS (contenu "Pourquoi BBL", design conservé) ===== -->
+        <section class="bbl-section bbl-saveurs" id="saveurs">
+            <div class="container">
+                <div class="text-center">
+                    <div class="bbl-eyebrow"> L’ÉNERGIE À VOTRE IMAGE <!-- Des saveurs pour tous les goûts --> </div>
+                    <h2 class="bbl-section-title">L’ÉNERGIE À VOTRE IMAGE</h2>
+                    <p class="bbl-section-sub">Une énergie qui accompagne votre quotidien</p>
+                </div>
+                <div class="row g-4">
+                                                                <div class="col-md-4">
+                            <div class="bbl-saveur-card bbl-saveur-orange">
+                                <div class="bbl-saveur-visual"  style="background-image:url('/template_vitrine/assets_custom/secteur_activite/pourquoi_bbl_feature1_image1792421475.png'); background-size:cover; background-position:center;" >
+                                                                    </div>
+                                <div class="bbl-saveur-body">
+                                    <h5>Une révolution énergisante plus saine.</h5>
+                                    <p>La boisson énergisante BBL (Boost By The Lion) redéfinit les standards du marché grâce à une formule intelligemment équilibrée. Contrairement aux boissons énergisantes classiques souvent surchargées, BBL se distingue fièrement avec deux fois moins de sucre et deux fois moins de caféine. Ce positionnement unique permet de répondre aux attentes d&#039;un public moderne et soucieux de sa santé, à la recherche d&#039;une alternative plus légère mais tout aussi performante pour affronter le quotidien.
+
+Une promesse forte : 100 % d&#039;énergie  
+Malgré sa teneur réduite en sucre et en caféine, Boost By The Lion ne fait aucun compromis sur l&#039;efficacité. Elle garantit 100 % d&#039;énergie pure pour stimuler le corps et l&#039;esprit à chaque instant de la journée. Totalement sans alcool (0% d&#039;alcool), sa recette est spécialement conçue pour offrir un coup de boost immédiat, durable et sans le contre-coup souvent associé aux excès de stimulants. C&#039;est l&#039;alliée idéale pour rester dynamique, concentré et productif.</p>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4">
+                            <div class="bbl-saveur-card bbl-saveur-citron">
+                                <div class="bbl-saveur-visual"  style="background-image:url('/template_vitrine/assets_custom/secteur_activite/pourquoi_bbl_feature2_image1791220159.jpg'); background-size:cover; background-position:center;" >
+                                                                    </div>
+                                <div class="bbl-saveur-body">
+                                    <h5>L&#039;Énergie Intime au Naturel.</h5>
+                                    <p>Deuxième création emblématique de la famille &quot;Boost By The Lion&quot;.
+
+BBL Turbo s&#039;impose comme une boisson énergisante unique, totalement sans alcool (0% d&#039;alcool), spécialement formulée à base d&#039;extraits de ginseng. Grâce aux vertus ancestrales de cette plante, ce puissant élixir agit comme un aphrodisiaque performant qui stimule efficacement la libido des hommes et des femmes, tout en favorisant une circulation sanguine parfaite.</p>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-4">
+                            <div class="bbl-saveur-card bbl-saveur-bissap">
+                                <div class="bbl-saveur-visual"  style="background-image:url('/template_vitrine/assets_custom/secteur_activite/pourquoi_bbl_feature3_image1791220159.jpg'); background-size:cover; background-position:center;" >
+                                                                    </div>
+                                <div class="bbl-saveur-body">
+                                    <h5>L&#039;Alliance Parfaite du Calme et de la Force.</h5>
+                                    <p>Troisième produit de la célèbre famille &quot;Boost By The Lion&quot;, BBL Maga Tapé réinvente l&#039;expérience des boissons festives en combinant harmonieusement l&#039;énergie du lion et la finesse de la vodka à 18% d&#039;alcool.
+
+Spécialement conçue pour les moments de reconnexion et de convivialité, cette boisson premium aromatisée à l&#039;orange, la pomme et la lime est idéale pour chasser le stress quotidien, apaiser l&#039;esprit et libérer le corps de toutes ses tensions.</p>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+
+        <!-- ===== VIDEO ===== -->
+        <section class="bbl-video-section" id="video">
+            <div class="container">
+                <div class="text-center">
+                    <div class="bbl-eyebrow"> L’énergie se vit aussi sur le terrain <!--BBL en mouvement--> </div>
+                    <h2 class="bbl-section-title">L’énergie se vit aussi sur le terrain</h2>
+                    <p class="bbl-section-sub mx-auto" style="opacity:.8">BBL est une marque qui veut être présente là où les gens vivent, travaillent, se divertissent et partagent leurs passions</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="bbl-video-wrapper">
+                            <video id="bblMainVideo" controls preload="metadata" poster="/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png">
+                                                                    <source src="/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_video1790863316.mp4" type="video/mp4">
+                                                                Votre navigateur ne supporte pas la lecture de vidéos.
+                            </video>
+                            <div class="bbl-video-play" id="bblVideoPlay">
+                                <div class="bbl-video-play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+
+        <!-- ===== GALERIE PHOTOS + VIDEOS ===== -->
+        <section class="bbl-section bbl-gallery" id="galerie">
+            <div class="container">
+                <div class="text-center">
+                    <div class="bbl-eyebrow">Galerie</div>
+                    <h2 class="bbl-section-title">BBL en images & vidéos</h2>
+                    <p class="bbl-section-sub">Le goût qui fait la différence, à savourer sans modération.</p>
+                </div>
+
+                <div class="bbl-gallery-filters">
+                    <button class="active" data-filter="all">Tout</button>
+                    <button data-filter="photo">Photos</button>
+                    <button data-filter="video">Vidéos</button>
+                </div>
+
+                <div class="bbl-gallery-grid" id="bblGalleryGrid">
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="0"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_18138.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="1"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_71636.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="2"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_23167.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="3"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_13062.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="4"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_94297.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="5"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_95942.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item photo-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="6"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_51537.jpg')">
+                            <span class="bbl-gallery-tag">Photo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item is-video video-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="7"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                            <span class="bbl-gallery-tag">Vidéo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-play-circle"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item is-video video-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="8"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                            <span class="bbl-gallery-tag">Vidéo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-play-circle"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item is-video video-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="9"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                            <span class="bbl-gallery-tag">Vidéo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-play-circle"></i>
+                            </span>
+                        </a>
+                                            <a href="javascript:void(0);" class="bbl-gallery-item is-video video-item"
+                           data-bs-toggle="modal" data-bs-target="#bblGalleryModal" data-media-index="10"
+                           style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                            <span class="bbl-gallery-tag">Vidéo</span>
+                            <span class="bbl-gallery-icon">
+                                <i class="fa-solid fa-play-circle"></i>
+                            </span>
+                        </a>
+                                    </div>
+            </div>
+        </section>
+
+        <!-- ===== MODAL GALERIE : CARROUSEL + MINIATURES ===== -->
+        <div class="modal fade bbl-gallery-modal" id="bblGalleryModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-white bbl-modal-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    <div class="modal-body d-flex flex-column justify-content-center p-0">
+
+                        <div id="bblGalleryModalCarousel" class="carousel slide bbl-modal-carousel" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                                                    <div class="carousel-item active" data-media-index="0">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_18138.jpg" class="bbl-modal-media" alt="BBL - image 1">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="1">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_71636.jpg" class="bbl-modal-media" alt="BBL - image 2">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="2">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_23167.jpg" class="bbl-modal-media" alt="BBL - image 3">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="3">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_13062.jpg" class="bbl-modal-media" alt="BBL - image 4">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="4">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_94297.jpg" class="bbl-modal-media" alt="BBL - image 5">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="5">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_95942.jpg" class="bbl-modal-media" alt="BBL - image 6">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="6">
+                                        <div class="bbl-modal-slide">
+                                                                                            <img src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_51537.jpg" class="bbl-modal-media" alt="BBL - image 7">
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="7">
+                                        <div class="bbl-modal-slide">
+                                                                                            <video class="bbl-modal-media" controls preload="metadata" poster="/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png">
+                                                    <source src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1790863381_20110.mp4" type="video/mp4">
+                                                </video>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="8">
+                                        <div class="bbl-modal-slide">
+                                                                                            <video class="bbl-modal-media" controls preload="metadata" poster="/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png">
+                                                    <source src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1791397225_66350.mov" type="video/mp4">
+                                                </video>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="9">
+                                        <div class="bbl-modal-slide">
+                                                                                            <video class="bbl-modal-media" controls preload="metadata" poster="/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png">
+                                                    <source src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1791397225_38207.mov" type="video/mp4">
+                                                </video>
+                                                                                    </div>
+                                    </div>
+                                                                    <div class="carousel-item " data-media-index="10">
+                                        <div class="bbl-modal-slide">
+                                                                                            <video class="bbl-modal-media" controls preload="metadata" poster="/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png">
+                                                    <source src="/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1791397226_62347.mov" type="video/mp4">
+                                                </video>
+                                                                                    </div>
+                                    </div>
+                                                            </div>
+
+                                                            <button class="carousel-control-prev" type="button" data-bs-target="#bblGalleryModalCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#bblGalleryModalCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                                    </div>
+
+                        <div class="bbl-modal-counter" id="bblModalCounter">1 / 11</div>
+
+                                                <div class="bbl-modal-thumbs">
+                            <div class="bbl-modal-thumbs-inner">
+                                                                    <button type="button" class="bbl-modal-thumb active"
+                                            data-media-index="0"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_18138.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="1"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_71636.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="2"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_23167.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="3"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_13062.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="4"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_94297.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="5"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_95942.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="6"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/galerie_bbl/bbl_galerie_1789948504_51537.jpg')">
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="7"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                                                                                    <span class="bbl-modal-thumb-play"><i class="fa-solid fa-play"></i></span>
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="8"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                                                                                    <span class="bbl-modal-thumb-play"><i class="fa-solid fa-play"></i></span>
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="9"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                                                                                    <span class="bbl-modal-thumb-play"><i class="fa-solid fa-play"></i></span>
+                                                                            </button>
+                                                                    <button type="button" class="bbl-modal-thumb "
+                                            data-media-index="10"
+                                            style="background-image: url('/template_vitrine/assets_custom/secteur_activite/bbl_en_mouvement_poster1790686007.png')">
+                                                                                    <span class="bbl-modal-thumb-play"><i class="fa-solid fa-play"></i></span>
+                                                                            </button>
+                                                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== CONTENU HTML PERSONNALISE ===== -->
+        
+        <!-- ===== CTA : CONTACT / PARTENARIAT ===== -->
+        <section class="bbl-section" id="contact" style="padding-top:0">
+            <div class="container">
+                <div class="bbl-cta">
+                    <h2>UNE QUESTION ? UN PARTENARIAT ?</h2>
+                    <p>Vous souhaitez commander BBL, devenir distributeur, organiser une collaboration ou simplement obtenir plus d'informations sur nos produits ? Notre équipe est à votre écoute.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                                                    <a href="tel:+2252722534703" class="bbl-btn bbl-btn-primary">
+                                <i class="fa-solid fa-phone"></i> +2252722534703
+                            </a>
+                                                <!-- <a href="https://delafossegroup.com/boutique" class="bbl-btn bbl-btn-ghost">
+                            Découvrir la boutique <i class="fa-solid fa-arrow-right"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer style-1 bg-light">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="widget widget_about me-2">
+                            <div class="footer-logo logo-white">
+                                <a href="https://delafossegroup.com">
+                                                                            <img src="/uploaded_files/logo_principal_uploaded.png" width="100px">
+                                                                    </a>
+                            </div>
+                            <ul class="widget-address">
+                                <li>
+                                    <p><span>Addresse</span> : Abidjan, Cocody Riviera Faya, en face de la gare des taxis.</p>
+                                </li>
+                                <li>
+                                    <p><span>E-mail</span> :  delafossegroupsarl@gmail.com </p>
+                                </li>
+                                <li>
+                                    <p><span>Téléphone</span> :  +225 21 xx xx xx </p>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Nos Secteurs d'Activités</h5>
+                            <ul>
+                                <li><a href="https://delafossegroup.com/boutique">La Boutique</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/bestcash">BestCash CI</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink">BBL Energy Drink</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/immobilier">Immobilier</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/Delafosse_Group_Store">Delafosse Group Store</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/Mini_Market">Mini Market de Gros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Reseaux Sociaux</h5>
+                            <ul>
+                                                                                                            <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61579061344571"> Delafosse GROUP Officiel</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=100066401981573"> Delafosse Group Monetique</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=100081864573883"> Delafosse Group Immobilier</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61561936234339"> Delafosse Group Store</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61571046369695&amp;sk=reels_tab"> BBL Energy Drink Cote d&#039;Ivoire</a></li>
+                                                                    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Top End -->
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row fb-inner wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-md-12 text-start">
+                        <p class="copyright-text">© <span class="current-year">2024</span> <a href="#">Delafosse
+                                Group</a>. </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-end">
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-md-center justify-content-xl-end">
+                            <span class="me-3">Tous droits réservés. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+    </footer>
+    <!-- Footer End -->
+
+    <button class="scroltop" type="button"><i class="fas fa-arrow-up"></i></button>
+
+</div>
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="/template_vitrine/js/jquery.min.js"></script><!-- JQUERY MIN JS -->
+<script src="/template_vitrine/vendor/wow/wow.min.js"></script><!-- WOW JS -->
+<script src="/template_vitrine/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP MIN JS -->
+<script src="/template_vitrine/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<!-- BOOTSTRAP SELECT MIN JS -->
+<script src="/template_vitrine/vendor/bootstrap-touchspin/bootstrap-touchspin.js"></script>
+<!-- BOOTSTRAP TOUCHSPIN JS -->
+<script src="/template_vitrine/vendor/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+<script src="/template_vitrine/vendor/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+
+<script src="/template_vitrine/vendor/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED-->
+<script src="/template_vitrine/vendor/masonry/masonry-4.2.2.js"></script><!-- MASONRY -->
+<script src="/template_vitrine/vendor/masonry/isotope.pkgd.min.js"></script><!-- ISOTOPE -->
+<script src="/template_vitrine/vendor/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
+
+
+
+<script src="/template_vitrine/js/dz.ajax.js"></script><!-- AJAX -->
+<script src="/template_vitrine/js/custom.js"></script><!-- CUSTOM JS -->
+
+<script>
+
+    let nom_cle = "slug_device";
+
+    console.log(localStorage.getItem(nom_cle));
+    let key_device_exist = localStorage.getItem(nom_cle);
+    if(key_device_exist == null){
+
+        const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
+        let le_slug = deviceName + '+'+ Date.now() + '-' + Math.floor(Math.random() * 99999999) + '-' + Math.floor(Math.random() * 999999999) ;
+        // alert(le_slug);
+        let result = localStorage.setItem(nom_cle,le_slug);
+
+        key_device_exist = deviceName;
+    }
+
+
+    let route_set_slug = 'https://delafossegroup.com/set-slug-utilisateur-in-session/PLACEHOLDER';
+    route_set_slug = route_set_slug.replace('PLACEHOLDER', key_device_exist);
+    let span_nb_produit_en_panier = document.getElementById('span_nb_produit_en_panier');
+    // alert(route_set_slug);
+    fetch(route_set_slug).then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        span_nb_produit_en_panier.innerText = data.nb_produit_en_panier;
+        console.log(data);
+    }).catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
+
+</script>
+
+    <script>
+        // ===== LECTEUR VIDEO PRINCIPAL =====
+        (function () {
+            var video = document.getElementById('bblMainVideo');
+            var playOverlay = document.getElementById('bblVideoPlay');
+            if (video && playOverlay) {
+                playOverlay.addEventListener('click', function () {
+                    video.play();
+                    playOverlay.classList.add('hidden');
+                });
+                video.addEventListener('play', function () { playOverlay.classList.add('hidden'); });
+                video.addEventListener('pause', function () { playOverlay.classList.remove('hidden'); });
+                video.addEventListener('ended', function () { playOverlay.classList.remove('hidden'); });
+            }
+        })();
+
+        // ===== FILTRES GALERIE =====
+        (function () {
+            var filters = document.querySelectorAll('.bbl-gallery-filters button');
+            var items = document.querySelectorAll('#bblGalleryGrid .bbl-gallery-item');
+            filters.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    filters.forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    var f = btn.getAttribute('data-filter');
+                    items.forEach(function (item) {
+                        if (f === 'all' || item.classList.contains(f + '-item')) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        })();
+
+        // ===== MODAL GALERIE : CARROUSEL BOOTSTRAP + MINIATURES =====
+        (function () {
+            var modalEl = document.getElementById('bblGalleryModal');
+            if (!modalEl) return;
+
+            var carouselEl = document.getElementById('bblGalleryModalCarousel');
+            var carousel = bootstrap.Carousel.getOrCreateInstance(carouselEl, { interval: 2000, wrap: true, ride: 'carousel' });
+            var thumbs = Array.prototype.slice.call(modalEl.querySelectorAll('.bbl-modal-thumb'));
+            var slides = Array.prototype.slice.call(carouselEl.querySelectorAll('.carousel-item'));
+            var counterEl = document.getElementById('bblModalCounter');
+            var total = slides.length;
+
+            function pauseAllVideos() {
+                modalEl.querySelectorAll('video').forEach(function (v) { v.pause(); });
+            }
+
+            function setActiveIndex(index) {
+                thumbs.forEach(function (t) {
+                    t.classList.toggle('active', parseInt(t.getAttribute('data-media-index'), 10) === index);
+                });
+                if (counterEl) counterEl.textContent = (index + 1) + ' / ' + total;
+
+                // Centre la miniature active dans la barre de miniatures
+                var activeThumb = thumbs[index];
+                if (activeThumb && activeThumb.scrollIntoView) {
+                    activeThumb.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                }
+            }
+
+            // Ouverture du modal depuis un item de la grille : on se positionne sur le bon slide
+            document.querySelectorAll('#bblGalleryGrid .bbl-gallery-item').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    var index = parseInt(item.getAttribute('data-media-index'), 10) || 0;
+                    modalEl.setAttribute('data-pending-index', index);
+                });
+            });
+
+            modalEl.addEventListener('shown.bs.modal', function () {
+                var pending = modalEl.getAttribute('data-pending-index');
+                if (pending !== null) {
+                    carousel.to(parseInt(pending, 10));
+                    modalEl.removeAttribute('data-pending-index');
+                }
+                // Relance le défilement automatique à chaque ouverture du modal
+                carousel.cycle();
+            });
+
+            modalEl.addEventListener('hidden.bs.modal', function () {
+                pauseAllVideos();
+                carousel.pause();
+            });
+
+            // Clic sur une miniature -> navigation directe vers le slide correspondant
+            thumbs.forEach(function (thumb) {
+                thumb.addEventListener('click', function () {
+                    var index = parseInt(thumb.getAttribute('data-media-index'), 10);
+                    carousel.to(index);
+                });
+            });
+
+            // Synchronisation miniatures + compteur + pause vidéo au changement de slide
+            carouselEl.addEventListener('slide.bs.carousel', function (event) {
+                pauseAllVideos();
+                setActiveIndex(event.to);
+            });
+        })();
+
+        // ===== LECTEUR VIDEO PRINCIPAL =====
+        (function () {
+            var video = document.getElementById('bblMainVideo');
+            var playOverlay = document.getElementById('bblVideoPlay');
+            if (video && playOverlay) {
+                playOverlay.addEventListener('click', function () {
+                    video.play();
+                    playOverlay.classList.add('hidden');
+                });
+                video.addEventListener('play', function () { playOverlay.classList.add('hidden'); });
+                video.addEventListener('pause', function () { playOverlay.classList.remove('hidden'); });
+                video.addEventListener('ended', function () { playOverlay.classList.remove('hidden'); });
+            }
+        })();
+
+        // ===== FILTRES GALERIE =====
+        (function () {
+            var filters = document.querySelectorAll('.bbl-gallery-filters button');
+            var items = document.querySelectorAll('#bblGalleryGrid .bbl-gallery-item');
+            filters.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    filters.forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    var f = btn.getAttribute('data-filter');
+                    items.forEach(function (item) {
+                        if (f === 'all' || item.classList.contains(f + '-item')) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

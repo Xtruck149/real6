@@ -1,0 +1,116 @@
+{
+ "title": "Delafosse Group SARL",
+ "lang": "fr",
+ "viewport": "width=device-width, initial-scale=1",
+ "description": "Delafosse Group, la prestation au-delà du Service !",
+ "robots": "index, follow",
+ "canonical": null,
+ "og:image": "https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png",
+ "jsonld_types": [],
+ "h1": [
+  "Delafosse Group, la prestation au-delà du Service !"
+ ],
+ "h2": [
+  "+ 5",
+  "95%",
+  "Nos secteurs d'activités",
+  "Articles qui pourraient vous interessez"
+ ],
+ "img_count": 17,
+ "img_missing_alt": 4,
+ "img_lazy": 11,
+ "img_formats": {
+  "png": 8,
+  "jpg": 8,
+  "jpeg": 1
+ },
+ "forms": [],
+ "inputs_without_label_or_aria": 0,
+ "empty_links": 22,
+ "hash_or_empty_hrefs": 1,
+ "tel_links": [],
+ "mailto_links": [],
+ "whatsapp_links": [
+  "whatsapp://send/?url=https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977",
+  "whatsapp://send/?url=https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640",
+  "whatsapp://send/?url=https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493",
+  "whatsapp://send/?url=https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405",
+  "whatsapp://send/?url=https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546"
+ ],
+ "social_links": [
+  "https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977",
+  "https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640",
+  "https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493",
+  "https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405",
+  "https://twitter.com/intent/tweet?related=costo&url=https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546",
+  "https://www.facebook.com/profile.php?id=100066401981573",
+  "https://www.facebook.com/profile.php?id=100081864573883",
+  "https://www.facebook.com/profile.php?id=61561936234339",
+  "https://www.facebook.com/profile.php?id=61571046369695&sk=reels_tab",
+  "https://www.facebook.com/profile.php?id=61579061344571",
+  "https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977",
+  "https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640",
+  "https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493",
+  "https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405",
+  "https://www.facebook.com/sharer/sharer.php?u=https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546"
+ ],
+ "internal_links": [
+  "https://delafossegroup.com",
+  "https://delafossegroup.com/bien-immobilier",
+  "https://delafossegroup.com/boutique",
+  "https://delafossegroup.com/boutique/finalisation/panier",
+  "https://delafossegroup.com/boutique/produit/atl-machine-caf---500ml---1200w---noir---atl-3ac276_1753960844_383977",
+  "https://delafossegroup.com/boutique/produit/congelateur-horizontal-smart-technology---stcc---640_1756906364_585640",
+  "https://delafossegroup.com/boutique/produit/matelas-cil-medicodorsal-extra-ferme-ph8-3-places-180-190-cm-_1761718805_914493",
+  "https://delafossegroup.com/boutique/produit/smart-technology-cong-lateur-coffre-gris-stcc-720_1754024243_337405",
+  "https://delafossegroup.com/boutique/produit/smart-tv-atl-65v6s---65-pouces---smart-tv-4k-uhd-_1756830711_946546",
+  "https://delafossegroup.com/contact-us-1.html",
+  "https://delafossegroup.com/login",
+  "https://delafossegroup.com/secteur-activite/Delafosse_Group_Store",
+  "https://delafossegroup.com/secteur-activite/Electromenager",
+  "https://delafossegroup.com/secteur-activite/Mini_Market",
+  "https://delafossegroup.com/secteur-activite/Monetique",
+  "https://delafossegroup.com/secteur-activite/bbl-energy-drink",
+  "https://delafossegroup.com/secteur-activite/bestcash",
+  "https://delafossegroup.com/secteur-activite/immobilier",
+  "https://delafossegroup.com/shop-list.html"
+ ],
+ "external_links_other": [],
+ "scripts": [
+  "/template_vitrine/js/jquery.min.js",
+  "/template_vitrine/vendor/wow/wow.min.js",
+  "/template_vitrine/vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
+  "/template_vitrine/vendor/bootstrap-select/dist/js/bootstrap-select.min.js",
+  "/template_vitrine/vendor/bootstrap-touchspin/bootstrap-touchspin.js",
+  "/template_vitrine/vendor/counter/waypoints-min.js",
+  "/template_vitrine/vendor/counter/counterup.min.js",
+  "/template_vitrine/vendor/imagesloaded/imagesloaded.js",
+  "/template_vitrine/vendor/masonry/masonry-4.2.2.js",
+  "/template_vitrine/vendor/masonry/isotope.pkgd.min.js",
+  "/template_vitrine/vendor/countdown/jquery.countdown.js",
+  "/template_vitrine/js/dz.ajax.js",
+  "/template_vitrine/js/custom.js"
+ ],
+ "stylesheets": [
+  "/template_vitrine/vendor/bootstrap-select/dist/css/bootstrap-select.min.css",
+  "/template_vitrine/vendor/nouislider/nouislider.min.css",
+  "/template_vitrine/vendor/animate/animate.css",
+  "/template_vitrine/vendor/lightgallery/dist/css/lightgallery.css",
+  "/template_vitrine/vendor/lightgallery/dist/css/lg-thumbnail.css",
+  "/template_vitrine/vendor/lightgallery/dist/css/lg-zoom.css",
+  "/template_vitrine/css/style.css",
+  "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css",
+  "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+ ],
+ "iframes": [],
+ "years_in_text": {
+  "2024": 1
+ },
+ "dates_in_text": [],
+ "phones_in_text": [],
+ "emails_in_text": [
+  "delafossegroupsarl@gmail.com"
+ ],
+ "html_bytes": 65146,
+ "words": 397
+}

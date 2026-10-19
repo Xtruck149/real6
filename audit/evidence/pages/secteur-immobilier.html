@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Title -->
+    <title>Delafosse Group SARL</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Yves LADDE">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="keywords"
+          content="Delafosse Group SARL, Bestcash CI, immobilier, terrains, location, fashion, order, shopping, store, fashion design, fashion store, responsive design, fashion showcase, modern design, fashion technology, e-shop, ecommerce web, eCommerce Website, minimal shop, online shop, online shopping, pixio, user experience, Design Elements, Trendy, Stylish, User-Friendly, Navigation, Product Display, Branding, Development, Visual Design, UI/UX, Website, Web Design">
+    <meta name="description"
+          content="Delafosse Group, la prestation au-delà du Service !">
+
+    <meta property="og:title" content="Delafosse Group SARL: la prestation au-delà du Service !">
+    <meta property="og:description"
+          content="Delafosse Group, la prestation au-delà du Service !">
+    <meta property="og:image" content="https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png">
+
+    <!-- TWITTER META -->
+    <meta name="twitter:title" content="Delafosse Group SARL">
+    <meta name="twitter:description"
+          content="Delafosse Group SARL: la prestation au-delà du Service !">
+    <meta name="twitter:image" content="https://delafossegroup.com/template_vitrine/assets_custom/logos/logo_officiel.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" type="image/x-icon" href="/template_vitrine/assets_custom/logos/logo_icone.ico">
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" type="text/css"
+          href="/template_vitrine/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/nouislider/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lightgallery.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lg-thumbnail.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/vendor/lightgallery/dist/css/lg-zoom.css">
+    <link rel="stylesheet" type="text/css" href="/template_vitrine/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        #loader_gestion_panier{
+            display: none;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(255,255,255,0.4);
+            z-index: 99999999;
+            text-align: center;
+        }
+        #loader_gestion_panier img{
+
+            position: absolute;
+            top: 30%;
+            /*bottom: 0px;*/
+            right: 40%;
+            /*right: 0px;*/
+            /*width: 50px;*/
+            /*height: 50px;*/
+        }
+
+        .mobile_only{
+            display: none;
+        }
+
+        
+        @media screen and (max-width: 800px) {
+            .mobile_only{
+                display: block;
+            }
+        }
+
+    </style>
+        <style>
+
+        .ul_secteur_activite {
+            list-style: none;
+        }
+
+        .ul_secteur_activite li:before {
+            content: '✓ ';
+        }
+
+        @media screen and (max-width: 800px) {
+            .ne_pas_afficher_sur_mobile{
+                display: none;
+            }
+        }
+
+            </style>
+</head>
+<body>
+
+<div class="page-wraper">
+
+
+
+
+    <!-- Header Star -->
+    <header class="site-header mo-left header">
+        <!-- Main Header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
+            <div class="main-bar clearfix">
+                <div class="container-fluid clearfix d-lg-flex d-block" style="position: relative">
+                    <!-- Website Logo -->
+                    <div class="logo-header logo-dark me-md-5">
+                        &nbsp;
+                        <a href="https://delafossegroup.com">
+                                                            <img src="/uploaded_files/logo_principal_uploaded.png" width="100px">
+                                                    </a>
+                    </div>
+
+                    <!-- Nav Toggle Button -->
+
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Main Nav -->
+                    <div class="header-nav w3menu navbar-collapse collapse justify-content-start"
+                         id="navbarNavDropdown">
+                        <div class="logo-header logo-dark">
+                            <a href="https://delafossegroup.com"><img src="/template_vitrine/assets_custom/logos/logo_officiel.png" alt=""></a>
+                        </div>
+                        <ul class=" nav navbar-nav">
+                            <li class="auto-width menu-left ">
+                                <a href="https://delafossegroup.com"><span>Acceuil</span></a>
+                            </li>
+                            
+                            
+                            <li class="" ><a href="https://delafossegroup.com/secteur-activite/Monetique">Monetique</a></li>
+                            
+                            <li class=""><a href="https://delafossegroup.com/secteur-activite/Electromenager">Electromenager</a></li>
+                            <li class=""><a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink">BBL Energy Drink</a></li>
+
+
+                            <li class="  active">
+                                <a href="https://delafossegroup.com/bien-immobilier"><span>Biens immobiliers</span></a>
+                            </li>
+
+                            <li class=" ">
+                                <a href="https://delafossegroup.com/boutique"><span>Boutique</span></a>
+                            </li>
+
+                            <li class="nav-item cart-link mobile_only">
+                                <a href="https://delafossegroup.com/login" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                    Mon espace
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dz-social-icon">
+                           
+                        </div>
+                    </div>
+
+                    <!-- EXTRA NAV -->
+                    <div class="extra-nav">
+                        <div class="extra-cell">
+                            <ul class="header-right">
+                                
+                                <li class="nav-item cart-link">
+                                    
+                                    <a href="https://delafossegroup.com/boutique/finalisation/panier" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                        <i class="iconly-Broken-Buy"></i>
+                                        <span class="badge badge-circle" id="span_nb_produit_en_panier"></span>
+                                        &nbsp;
+                                        Panier &nbsp;&nbsp;
+                                    </a>
+                                </li>
+                                <li class="nav-item cart-link">
+                                    <a href="https://delafossegroup.com/login" class="nav-link cart-btn" aria-controls="offcanvasRight">
+                                        Mon espace
+                                    </a>
+                                </li>
+
+                              
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="div_notification" style="position: absolute;top: 80px;z-index: 99999999;left: 0px;right: 0px"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header End -->
+
+
+
+        
+    </header>
+    <!-- Header End -->
+                <div class="page-content bg-light">
+        <!--banner-->
+                    <div class="dz-bnr-inr bg-secondary" style="background-image: url('/template_vitrine/assets_custom/bannieres/immobilier1791222327.png')">
+            <div class="container">
+                <div class="dz-bnr-inr-entry ">
+                    <p class="text-left" >
+                                                    <img style="height: 80px;" src="/template_vitrine/assets_custom/logos/logo_immobilier_2.png">
+                                            </p>
+                    <h1>immobilier</h1>
+                    <nav aria-label="breadcrumb" class="breadcrumb-row">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="https://delafossegroup.com"> Acceuil</a></li>
+                            <li class="breadcrumb-item">Secteur > immobilier</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <section class="content-inner">
+                            <div class="container">
+                    <div class="row about-style2 align-items-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12 m-b30">
+                            <div class="about-thumb">
+
+                                                                    <img loading="lazy" src="/template_vitrine/assets_custom/secteur_activite/image_section_immobilier1791220316.png" style="width: 962px;height: 885px" alt="">
+                                                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="about-content">
+                                                                    <div class="section-head style-1 d-block">
+                                    <h3 class="title">Trouvez le bien immobilier qui vous convient</h3>
+                                    <div class="section-head style-1 d-block">
+<p>Delafosse Group Immobilier est une branche sp&eacute;cialis&eacute;e du groupe Delafosse, une grande entreprise pr&eacute;sente dans plusieurs secteurs. Depuis plus de 4 ans, nous sommes experts dans la vente, la construction, et la gestion de biens immobiliers, incluant des terrains, des maisons &agrave; vendre, ainsi que des studios &agrave; la location.</p>
+<ul class="ul_secteur_activite">
+<li>Vente de terrains et de maisons</li>
+<li>Construction de biens immobiliers</li>
+<li>Gestion locative, incluant environ 18 biens</li>
+<li>Location de studios</li>
+</ul>
+<p>&nbsp;</p>
+<p>Informations Pratiques : <br><img style="height: 40px; width: 30px; padding-bottom: 8px;" src="https://static.thenounproject.com/png/333603-200.png"> Abidjan, Cocody Riviera Faya, en face de la gare des taxis.</p>
+<ul>
+<li><strong>Horaires d'ouverture :</strong></li>
+<li>Lundi au Vendredi : 08h - 18h</li>
+<li>Samedi : 08h - 16h</li>
+</ul>
+</div>
+
+                                    <p class="text-center" >
+                                        <a href="https://delafossegroup.com/bien-immobilier" style="width: 100%;padding-left: 125px;padding-right: 125px;" class="btn btn-outline-primary" >Voir les biens immobiliers</a>
+                                    </p>
+                                </div>
+
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="site-footer style-1 bg-light">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="widget widget_about me-2">
+                            <div class="footer-logo logo-white">
+                                <a href="https://delafossegroup.com">
+                                                                            <img src="/uploaded_files/logo_principal_uploaded.png" width="100px">
+                                                                    </a>
+                            </div>
+                            <ul class="widget-address">
+                                <li>
+                                    <p><span>Addresse</span> : Abidjan, Cocody Riviera Faya, en face de la gare des taxis.</p>
+                                </li>
+                                <li>
+                                    <p><span>E-mail</span> :  delafossegroupsarl@gmail.com </p>
+                                </li>
+                                <li>
+                                    <p><span>Téléphone</span> :  +225 21 xx xx xx </p>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Nos Secteurs d'Activités</h5>
+                            <ul>
+                                <li><a href="https://delafossegroup.com/boutique">La Boutique</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/bestcash">BestCash CI</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/bbl-energy-drink">BBL Energy Drink</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/immobilier">Immobilier</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/Delafosse_Group_Store">Delafosse Group Store</a></li>
+                                <li><a href="https://delafossegroup.com/secteur-activite/Mini_Market">Mini Market de Gros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Reseaux Sociaux</h5>
+                            <ul>
+                                                                                                            <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61579061344571"> Delafosse GROUP Officiel</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=100066401981573"> Delafosse Group Monetique</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=100081864573883"> Delafosse Group Immobilier</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61561936234339"> Delafosse Group Store</a></li>
+                                                                                                                                                <li><a target="_blank" href=" https://www.facebook.com/profile.php?id=61571046369695&amp;sk=reels_tab"> BBL Energy Drink Cote d&#039;Ivoire</a></li>
+                                                                    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Top End -->
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row fb-inner wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 col-md-12 text-start">
+                        <p class="copyright-text">© <span class="current-year">2024</span> <a href="#">Delafosse
+                                Group</a>. </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-end">
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-md-center justify-content-xl-end">
+                            <span class="me-3">Tous droits réservés. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+    </footer>
+    <!-- Footer End -->
+
+    <button class="scroltop" type="button"><i class="fas fa-arrow-up"></i></button>
+
+</div>
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="/template_vitrine/js/jquery.min.js"></script><!-- JQUERY MIN JS -->
+<script src="/template_vitrine/vendor/wow/wow.min.js"></script><!-- WOW JS -->
+<script src="/template_vitrine/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP MIN JS -->
+<script src="/template_vitrine/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<!-- BOOTSTRAP SELECT MIN JS -->
+<script src="/template_vitrine/vendor/bootstrap-touchspin/bootstrap-touchspin.js"></script>
+<!-- BOOTSTRAP TOUCHSPIN JS -->
+<script src="/template_vitrine/vendor/counter/waypoints-min.js"></script><!-- WAYPOINTS JS -->
+<script src="/template_vitrine/vendor/counter/counterup.min.js"></script><!-- COUNTERUP JS -->
+
+<script src="/template_vitrine/vendor/imagesloaded/imagesloaded.js"></script><!-- IMAGESLOADED-->
+<script src="/template_vitrine/vendor/masonry/masonry-4.2.2.js"></script><!-- MASONRY -->
+<script src="/template_vitrine/vendor/masonry/isotope.pkgd.min.js"></script><!-- ISOTOPE -->
+<script src="/template_vitrine/vendor/countdown/jquery.countdown.js"></script><!-- COUNTDOWN FUCTIONS  -->
+
+
+
+<script src="/template_vitrine/js/dz.ajax.js"></script><!-- AJAX -->
+<script src="/template_vitrine/js/custom.js"></script><!-- CUSTOM JS -->
+
+<script>
+
+    let nom_cle = "slug_device";
+
+    console.log(localStorage.getItem(nom_cle));
+    let key_device_exist = localStorage.getItem(nom_cle);
+    if(key_device_exist == null){
+
+        const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
+        let le_slug = deviceName + '+'+ Date.now() + '-' + Math.floor(Math.random() * 99999999) + '-' + Math.floor(Math.random() * 999999999) ;
+        // alert(le_slug);
+        let result = localStorage.setItem(nom_cle,le_slug);
+
+        key_device_exist = deviceName;
+    }
+
+
+    let route_set_slug = 'https://delafossegroup.com/set-slug-utilisateur-in-session/PLACEHOLDER';
+    route_set_slug = route_set_slug.replace('PLACEHOLDER', key_device_exist);
+    let span_nb_produit_en_panier = document.getElementById('span_nb_produit_en_panier');
+    // alert(route_set_slug);
+    fetch(route_set_slug).then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        span_nb_produit_en_panier.innerText = data.nb_produit_en_panier;
+        console.log(data);
+    }).catch(function(err) {
+        console.log('Fetch Error :-S', err);
+    });
+
+</script>
+
+</body>
+</html>

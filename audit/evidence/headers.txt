@@ -1,0 +1,11 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Mon, 19 Oct 2026 17:20:49 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+cache-control: no-cache, private
+set-cookie: XSRF-TOKEN=eyJpdiI6Ilk5c3pZR3E4RTRWOU85MFhsckJPRWc9PSIsInZhbHVlIjoiVGdCc2k1Skk5eFFoRUxwdklhdVFaU0x5SHFnRDJQRnk4SGNNNlovWTRFQXBmdEpEeUFQSzlUWmhMaUlCbzNYSUpqUW1ER2pVRWhkSlFOOXZqYzJlbHlnZzRkL3hSaERjcEc3SCtIZ21DNXY5U01rYlIvRVdoMlcvWUczRUJzSVQiLCJtYWMiOiI5MDkxN2Q4ZGZmYWJjYzBkYzA3MTE3M2RiNmNiYjkyOTJiNDFkOWZlYWI1YWJhZWFkYTA3ZmRhYjEwNzUyYTNkIiwidGFnIjoiIn0%3D; expires=Mon, 19 Oct 2026 19:20:49 GMT; Max-Age=7200; path=/; secure; samesite=lax
+set-cookie: delafossegroup_session=eyJpdiI6ImdPTW9wVm4vVEs4NEhGTnVSVktHS0E9PSIsInZhbHVlIjoiVDAyL2d5OXNPMTgvTjJtU2lla3NpcmdIM0EvOThRYVFtbXRWK1hRTUxxa3JJMFcvQkFhK3p1RkZ4OHNMdXlFQzlZNkMzbWRiTm12aGFWemlGMFVhOEdac3pNaUU2VlRidkFHWGJDOVp4Y2tpejBSYzliT3lsZCtGTW9SV0NyUFkiLCJtYWMiOiIwMmE2YmVmNGE2NDk0MGJiYWFmYmI3MjU4NTBiMjI4MTI3ZWNjM2U0OTMxM2QxZTUzYTQxZDk2OTQ1ZDA0MmE5IiwidGFnIjoiIn0%3D; expires=Mon, 19 Oct 2026 19:20:49 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+server: o2switch-PowerBoost-v3
+
